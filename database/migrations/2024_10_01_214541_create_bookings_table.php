@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('date');
             $table->boolean('is_customer')->default(0);
             $table->bigInteger('tax')->nullable();
-            $table->bigInteger('discount')->nullable();
+            $table->bigInteger('discount_id')->nullable();
             $table->bigInteger('total_price');
             $table->enum('status', ['waiting', 'approved', 'canceled'])->default('waiting');
             $table->softDeletes();
