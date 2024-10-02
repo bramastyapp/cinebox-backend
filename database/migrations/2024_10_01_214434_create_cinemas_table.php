@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('cinemas', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('location');
+            $table->string('address');
+            $table->string('map_location');
             $table->softDeletes();
             $table->timestamps();
         });

@@ -13,7 +13,8 @@ class Cinema extends Model
 
     protected $fillable = [
         'name',
-        'location',
+        'address',
+        'map_location',
     ];
 
     public function rooms(): HasMany
