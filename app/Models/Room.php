@@ -26,7 +26,7 @@ class Room extends Model
     {
         return $this->hasMany(Seat::class);
     }
-    public function roombooks(): HasMany
+    public function roomBooks(): HasMany
     {
         return $this->hasMany(RoomBook::class);
     }

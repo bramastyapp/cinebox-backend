@@ -31,4 +31,8 @@ class RoomBook extends Model
     {
         return $this->hasMany(TimeSession::class);
     }
+    public function timeSession(): BelongsTo
+    {
+        return $this->belongsTo(TimeSession::class);
+    }
 }
